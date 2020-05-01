@@ -8,9 +8,9 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 
-class LearningController extends AppController
+class MyflowerController extends AppController
 {
-    public function mostra()
+    public function show()
     {
         $flowers = TableRegistry::getTableLocator()->get('Flowers'); //trasformo la mia table in oggetto
         $query = $flowers->find('all', [  //metodo find come select
