@@ -18,5 +18,6 @@ class MyflowerController extends AppController
         ]);
 
         $this->set('query', $query);
+        $this->viewBuilder()->setLayout('flowers');
     }
 }
